@@ -1,0 +1,24 @@
+{
+  "name": "teste-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx index.ts",
+    "teste": "tsx index.ts --teste",
+    "agendar": "powershell -ExecutionPolicy Bypass -File agendar.ps1",
+    "status": "powershell -ExecutionPolicy Bypass -File status.ps1",
+    "desagendar":"powershell -ExecutionPolicy Bypass -File agendar.ps1 -Remover",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "playwright": "^1.65.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
